@@ -10,9 +10,14 @@
     &__icon {
         font-size: 6rem;
         margin-bottom: .5rem;
+        padding-top: 1px;
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         -webkit-background-clip: text;
         color: transparent;
+
+        // width: 6.4rem;
+        // height: 6.4rem;
+        // viewBox: 0 0 64 64;
         }
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);

@@ -93,6 +93,8 @@ body {
   .heading-secondary:hover {
     transform: skewX(-5deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .heading-secondary-white {
+    color: white; }
 
 .heading-tertiatry {
   font-size: 1.6rem;
@@ -237,6 +239,7 @@ body {
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
+    padding-top: 1px;
     background-image: linear-gradient(to right, #81bcd3, #033245);
     -webkit-background-clip: text;
     color: transparent; }
@@ -249,7 +252,7 @@ body {
   position: relative;
   height: 52rem; }
   .card__side {
-    height: 52rem;
+    height: 40rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -264,31 +267,35 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ebc143, #f9a600); }
+        background-image: linear-gradient(to right bottom, #be1c1c, #941515); }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #81bcd3, #033245); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #2298ff, #5643fa); }
+        background-image: linear-gradient(to right bottom, #ebc143, #f9a600); }
+      .card__side--back-4 {
+        background-image: linear-gradient(to right bottom, #669933, #004518); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
   .card__picture {
     background-size: cover;
-    height: 23rem;
+    height: 18rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ebc143, #f9a600), url(../img/nat-5.jpg); }
+      background-image: url(../img/hike-on.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #81bcd3, #033245), url(../img/nat-6.jpg); }
+      background-image: url(../img/inhiit.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2298ff, #5643fa), url(../img/nat-7.jpg); }
+      background-image: url(../img/savr.jpg); }
+    .card__picture--4 {
+      background-image: url(../img/mario.jpg); }
   .card__heading {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: 300;
     text-transform: uppercase;
     color: white;
@@ -298,17 +305,19 @@ body {
     text-align: right;
     width: 75%; }
   .card__heading-span {
-    padding: 1rem 1.5rem;
+    padding: 1.2rem 1.6rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(235, 193, 67, 0.85), rgba(249, 166, 0, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(190, 28, 28, 0.85), rgba(148, 21, 21, 0.85)); }
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(129, 188, 211, 0.85), rgba(3, 50, 69, 0.85)); }
     .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(34, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(235, 193, 67, 0.85), rgba(249, 166, 0, 0.85)); }
+    .card__heading-span--4 {
+      background-image: linear-gradient(to right bottom, rgba(102, 153, 51, 0.85), rgba(0, 69, 24, 0.85)); }
   .card__details {
-    padding: 3rem; }
+    padding: 1rem; }
     .card__details ul {
       list-style: none;
       width: 80%;
@@ -744,7 +753,7 @@ body {
   margin-top: -25vh; }
 
 .section-features {
-  padding: 20rem 0;
+  padding: 15rem 0 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(129, 188, 211, 0.8), rgba(3, 50, 69, 0.8)), url(../../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg);

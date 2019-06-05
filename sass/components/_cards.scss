@@ -7,7 +7,7 @@
     height: 52rem;
 
     &__side {
-        height: 52rem;
+        height: 40rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -25,13 +25,16 @@
         &--back {
             transform: rotateY(180deg);
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark); 
+                background-image: linear-gradient(to right bottom, $color-fourth-light, $color-fourth-dark); 
             }
             &-2 {
                 background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark); 
             }
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark); 
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark); 
+            }
+            &-4 {
+                background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark); 
             }
         }
     }
@@ -47,7 +50,7 @@
     //front side styling
     &__picture {
         background-size: cover;
-        height: 23rem;
+        height: 18rem;
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -56,17 +59,21 @@
 
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
+            // background-image: linear-gradient(to right bottom, $color-fourth-light, $color-fourth-dark), url(../img/hike-on.jpg);
+            background-image: url(../img/hike-on.jpg);
         }
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/nat-6.jpg);
+            background-image: url(../img/inhiit.jpg);
         }
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-7.jpg);
+            background-image: url(../img/savr.jpg);
+        }
+        &--4 {
+            background-image: url(../img/mario.jpg);
         }
     }
     &__heading {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
         font-weight: 300;
         text-transform: uppercase;
         color: $color-white;
@@ -77,13 +84,13 @@
         width: 75%;
     }
     &__heading-span {
-        padding: 1rem 1.5rem;
+        padding: 1.2rem 1.6rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
         &--1 {
             background-image: linear-gradient(to right bottom, 
-                rgba($color-secondary-light, .85), 
-                rgba($color-secondary-dark, .85));
+                rgba($color-fourth-light, .85), 
+                rgba($color-fourth-dark, .85));
         }
         &--2 {
             background-image: linear-gradient(to right bottom, 
@@ -92,12 +99,17 @@
         }
         &--3 {
             background-image: linear-gradient(to right bottom, 
-                rgba($color-tertiary-light, .85), 
-                rgba($color-tertiary-dark, .85));
+                rgba($color-secondary-light, .85), 
+                rgba($color-secondary-dark, .85));
+        }
+        &--4 {
+            background-image: linear-gradient(to right bottom, 
+                rgba($color-green-light, .85), 
+                rgba($color-green-dark, .85));
         }
     }
     &__details {
-        padding: 3rem;
+        padding: 1rem;
         ul {
             list-style: none;
             width: 80%;

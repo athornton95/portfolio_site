@@ -11,6 +11,17 @@
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
         <title>Alex Thornton | Web Dev & Design</title>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                // $(".").click(function(){
+                //     $("#myCheck").prop("checked", true);
+                // });
+                $(".navigation__link").click(function(){
+                    $(".navigation__checkbox").prop("checked", false);
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="navigation">

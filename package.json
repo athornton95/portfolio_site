@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "form-serializer": "^2.5.0"
   }
 }

@@ -14,9 +14,6 @@
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
-                // $(".").click(function(){
-                //     $("#myCheck").prop("checked", true);
-                // });
                 $(".navigation__link").click(function(){
                     $(".navigation__checkbox").prop("checked", false);
                 });
@@ -41,9 +38,9 @@
             </nav>
         </div>
         <header class = "header">
-           <div class="header__logo-box">
+           <!-- <div class="header__logo-box">
             <img src = "img/logo-white.png" alt="Logo" class = "header__logo">
-           </div>
+           </div> -->
            <div class = "header__text-box">
             <h1 class = "heading-primary">
                 <span class = "heading-primary--main">Hi, my name is Alex</span>
@@ -316,21 +313,25 @@
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
-                            <form action="#" class="form">
+                            <form action="#" name="submit-to-google-sheet" class="form" id="test-form">
                                 <div class="u-margin-bottom-medium">
                                     <h2 class="heading-secondary">
-                                        Start booking now
+                                        Let's Chat!
                                     </h2>
                                 </div>
                                 <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                    <input type="text" class="form__input" placeholder="Full Name" name = "name" id="name" required>
                                     <label for="name" class="form__label">Full Name</label>
                                 </div>
                                 <div class="form__group">
-                                    <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+                                    <input type="email" class="form__input" placeholder="Email Address" name = "email" id="email" required>
                                     <label for="email" class="form__label">Email Address</label>
                                 </div>
-                                <div class="form__group u-margin-bottom-small">
+                                <div class="form__group">
+                                        <input type="text" class="form__input" placeholder="Message..." name = "text" id="text" required>
+                                        <label for="text" class="form__label">Message...</label>
+                                    </div>
+                                <!-- <div class="form__group u-margin-bottom-small">
                                     <div class="form__radio-group">
                                         <input type="radio" class="form__radio-input" id="small" name="size">
                                         <label for="small" class="form__radio-label">
@@ -345,9 +346,9 @@
                                             Large tour group
                                         </label>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="form__group">
-                                        <button class="button button--green">Next step &rarr;</button>
+                                        <button type= "submit" id="submit-form" class="button button--green">Send Message &rarr;</button>
                                 </div>
                             </form>
                         </div>
@@ -363,17 +364,17 @@
                 <div class="col-1-of-2">
                     <div class="footer__navigation">
                         <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">LinkedIn</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">GitHub</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Email</a></li>
+                            <!-- <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Terms</a></li> -->
                         </ul>
                     </div>
                 </div>
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
-                        Built by <a href="#" class="footer__link">Alex Thornton</a> to learn Sass
+                        Built by <a href="#" class="footer__link">Alex Thornton</a> using Sass, coffee, & Spotify premium
                     </p>
                 </div>
             </div>
@@ -505,6 +506,16 @@
                 </div>
             </div>
         </section> -->
-
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyIVYiJKDsy_ZdH_GQHCufiqU3GONF4IZjH4R0FQDXUs_mi4p42/exec'
+            const form = document.forms['submit-to-google-sheet']
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+                e.target.reset();
+            })
+        </script>
     </body>
 </html>

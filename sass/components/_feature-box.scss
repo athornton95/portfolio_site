@@ -23,3 +23,26 @@
         transform: translateY(-1.5rem) scale(1.03);
     }
 }
+
+.feature-language {
+    height: 4rem;
+    text-align: center;
+    ul {
+        list-style: none;
+        padding: 8rem 0;
+        li {
+            display: inline;
+            padding: 0 2rem;
+            transition: transform .3s;
+            i {
+                font-size: 6rem;
+                color: rgba($color-white, .7);
+                &:hover {
+                    transform: translateY(-1.5rem) scale(1.03);
+                    color: $color-white;
+                    text-shadow: 0 1rem 3rem rgba($color-primary-dark, .6);
+                }
+            }
+        }
+    }
+}

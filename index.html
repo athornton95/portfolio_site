@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
@@ -24,23 +25,20 @@
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
             <label for="navi-toggle" class="navigation__button">
-                <snap class="navigation__icon">&nbsp;</span>
+                <span class="navigation__icon">&nbsp;</span>
             </label>
             <div class="navigation__background">&nbsp;</div>
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01</span>who i am</a></li>
+                    <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01</span>in a nutshell</a></li>
                     <li class="navigation__item"><a href="#section-features" class="navigation__link"><span>02</span>what i do</a></li>
-                    <li class="navigation__item"><a href="#section-tours" class="navigation__link"><span>03</span>what i've done</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>where i've been</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>let's chat</a></li>
+                    <li class="navigation__item"><a href="#section-tours" class="navigation__link"><span>03</span>web dev</a></li>
+                    <li class="navigation__item"><a href="#branding" class="navigation__link"><span>04</span>logos & branding</a></li>
+                    <li class="navigation__item"><a href="#form" class="navigation__link"><span>05</span>let's chat</a></li>
                 </ul>
             </nav>
         </div>
         <header class = "header">
-           <!-- <div class="header__logo-box">
-            <img src = "img/logo-white.png" alt="Logo" class = "header__logo">
-           </div> -->
            <div class = "header__text-box">
             <h1 class = "heading-primary">
                 <span class = "heading-primary--main">Hi, my name is Alex</span>
@@ -68,13 +66,12 @@
                             <p class="paragraph">
                                 I am a fiend for new experiences. Whether it be visiting a new country, learning a new coding language, or making a new friend, newness is my lifeblood. Nothing brings me more joy than learning something new and getting to share it with others.
                             </p> 
-                            <!-- <a href="#" class="btn-text">Learn more &rarr;</a> -->
                     </div>
                     <div class = "col-1-of-2">
                         <div class="composition">
-                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                            <img src="img/me-2.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                            <img src="img/me-3.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+                            <img src="img/me-1.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
                         </div>
                     </div>
                 </div>
@@ -123,11 +120,50 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class = "feature-language">
+                        <ul>
+                            <li>
+                                <i class="devicon-javascript-plain"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-react-original-wordmark"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-sass-original"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-jquery-plain-wordmark"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-bootstrap-plain-wordmark"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-nodejs-plain"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-mongodb-plain-wordmark"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-java-plain-wordmark"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-mysql-plain-wordmark"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-illustrator-line"></i>
+                            </li>
+                            <li>
+                                <i class="devicon-photoshop-line"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
             <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                        What I've done
+                        Web development & design
                     </h2>
                 </div>
                     <div class = "row">
@@ -153,11 +189,9 @@
                                 </div>
                                 <div class="card__side card__side--back card__side--back-1">
                                     <div class="card__cta">
-                                        <div class="card__price-box">
-                                            <p class="card__price-only">Only</p>
-                                            <p class="card__price-value">$279</p>
-                                        </div>
-                                        <a href="#popup-1" class="button button--white">deep dive</a>
+                                        <a href="#popup-1" class="button button--white button--white-round">
+                                             <i class="icon-basic-target"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -177,19 +211,14 @@
                                         <ul>
                                             <li>Java</li>
                                             <li>MySQL</li>
-                                            <!-- <li>React</li>
-                                            <li>Front-end APIs</li>
-                                            <li>Boostrap</li> -->
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="card__side card__side--back card__side--back-2">
                                     <div class="card__cta">
-                                        <div class="card__price-box">
-                                            <p class="card__price-only">Only</p>
-                                            <p class="card__price-value">$497</p>
-                                        </div>
-                                        <a href="#popup-2" class="button button--white">deep dive</a>
+                                        <a href="#popup-2" class="button button--white button--white-round">
+                                            <i class="icon-basic-target"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -208,7 +237,6 @@
                                     <div class="card__details">
                                         <ul>
                                             <li>Javascript</li>
-                                            <!-- <li>CSS</li> -->
                                             <li>Bootstrap</li>
                                             <li>Node.js</li>
                                             <li>MongoDB</li>
@@ -217,11 +245,9 @@
                                 </div>
                                 <div class="card__side card__side--back card__side--back-3">
                                     <div class="card__cta">
-                                        <div class="card__price-box">
-                                            <p class="card__price-only">Only</p>
-                                            <p class="card__price-value">$897</p>
-                                        </div>
-                                        <a href="#popup-3" class="button button--white">deep dive</a>
+                                        <a href="#popup-3" class="button button--white button--white-round">
+                                            <i class="icon-basic-target"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -240,31 +266,23 @@
                                     <div class="card__details">
                                         <ul>
                                             <li>Javascript</li>
-                                            <!-- <li>CSS</li> -->
                                             <li>JQuery</li>
                                             <li>Pure CSS</li>
-                                            <!-- <li>MongoDB</li> -->
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="card__side card__side--back card__side--back-4">
                                     <div class="card__cta">
-                                        <div class="card__price-box">
-                                            <p class="card__price-only">Only</p>
-                                            <p class="card__price-value">$897</p>
-                                        </div>
-                                        <a href="#popup-4" class="button button--white">deep dive</a>
+                                        <a href="#popup-4" class="button button--white button--white-round">
+                                            <i class="icon-basic-target"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                 </div>
-                <!-- <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="button button--green">Discover all tours</a>
-                </div> -->
-
             </section>
-            <section class="section-stories">
+            <section class="section-stories" id="branding">
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop>
                         <source src="img/baker.mp4" type="video/mp4">
@@ -274,42 +292,95 @@
                 </div>
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                        We make people genuinely happy
+                        Logos & branding
                     </h2>
                 </div>
-                <div class="row">
+                <div class="row row-margin-bottom__small">
+                <div class="col-1-of-4">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="img/nat-8.jpg" alt="Person on a tour"class="story__img">
+                            <img src="img/bb-mock.jpg" alt="Person on a tour"class="story__img">
                             <figcaption class="story__caption">
-                                Mary Smith
+                                Board & Bleu
                             </figcaption> 
                         </figure>
-                        <div class="story__text">
-                            <h3 class="heading-tertiatry u-margin-bottom-small">I had the best week ever with my family.</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio harum nobis laboriosam fugit ipsa a aliquid beatae, rerum quos fugiat et adipisci debitis, molestias incidunt aperiam neque quo vero obcaecati? Odio harum nobis laboriosam fugit ipsa a aliquid beatae.</p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="story">
+                        <figure class="story__shape">
+                            <img src="img/blooms-mock.png" alt="Person on a tour"class="story__img">
+                            <figcaption class="story__caption">
+                                Blooms & Hallelujahs
+                            </figcaption> 
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="story">
+                        <figure class="story__shape">
+                            <img src="img/ccc-mock.png" alt="Person on a tour"class="story__img">
+                            <figcaption class="story__caption">
+                                Colorado Cherry Co.
+                            </figcaption> 
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="story">
+                        <figure class="story__shape">
+                            <img src="img/lyd-mock.png" alt="Person on a tour"class="story__img">
+                            <figcaption class="story__caption">
+                                Little Yellow Door
+                            </figcaption> 
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-margin-bottom__small">
+                    <div class="col-1-of-4">
+                        <div class="story">
+                            <figure class="story__shape">
+                                <img src="img/garth-1-mock.jpg" alt="Person on a tour"class="story__img">
+                                <figcaption class="story__caption">
+                                    Garth Brooks' Friends in Low Places Tour
+                                </figcaption> 
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="story">
+                            <figure class="story__shape">
+                                <img src="img/garth-2-mock.jpg" alt="Person on a tour"class="story__img">
+                                <figcaption class="story__caption">
+                                    Garth Brooks' Stadium Tour
+                                </figcaption> 
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="story">
+                            <figure class="story__shape">
+                                <img src="img/ironton-mock.PNG" alt="Person on a tour"class="story__img">
+                                <figcaption class="story__caption">
+                                    Ironton Distillery
+                                </figcaption> 
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="story">
+                            <figure class="story__shape">
+                                <img src="img/mac-mock.jpg" alt="Person on a tour"class="story__img">
+                                <figcaption class="story__caption">
+                                    Easy Mac Sales
+                                </figcaption> 
+                            </figure>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="story">
-                        <figure class="story__shape">
-                            <img src="img/nat-9.jpg" alt="Person on a tour"class="story__img">
-                            <figcaption class="story__caption">
-                                Jack Wilson
-                            </figcaption> 
-                        </figure>
-                        <div class="story__text">
-                            <h3 class="heading-tertiatry u-margin-bottom-small">Wow! My life is completely different now!</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio harum nobis laboriosam fugit ipsa a aliquid beatae, rerum quos fugiat et adipisci debitis, molestias incidunt aperiam neque quo vero obcaecati? Odio harum nobis laboriosam fugit ipsa a aliquid beatae.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="u-center-text u-margin-top-huge">
-                        <a href="#" class="btn-text">Discover all tours &rarr;</a>
-                    </div>
             </section>
-            <section class="section-book">
+            <section class="section-book" id="form">
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
@@ -331,22 +402,6 @@
                                         <input type="text" class="form__input" placeholder="Message..." name = "text" id="text" required>
                                         <label for="text" class="form__label">Message...</label>
                                     </div>
-                                <!-- <div class="form__group u-margin-bottom-small">
-                                    <div class="form__radio-group">
-                                        <input type="radio" class="form__radio-input" id="small" name="size">
-                                        <label for="small" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            Small tour group
-                                        </label>
-                                    </div>
-                                    <div class="form__radio-group">
-                                        <input type="radio" class="form__radio-input" id="large" name="size">
-                                        <label for="large" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            Large tour group
-                                        </label>
-                                    </div>
-                                </div> -->
                                 <div class="form__group">
                                         <button type= "submit" id="submit-form" class="button button--green">Send Message &rarr;</button>
                                 </div>
@@ -357,18 +412,13 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
-            </div>
-            <div class="row">
+            <div class="row row-margin-bottom__small">
                 <div class="col-1-of-2">
                     <div class="footer__navigation">
                         <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link">LinkedIn</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">GitHub</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Email</a></li>
-                            <!-- <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Terms</a></li> -->
+                            <li class="footer__item"><a href="https://www.linkedin.com/in/alex-thornton-co/" target = "_blank" class="footer__link">LinkedIn</a></li>
+                            <li class="footer__item"><a href="https://github.com/athornton95" target = "_blank" class="footer__link">GitHub</a></li>
+                            <li class="footer__item"><a target = "_blank" href="alex_thornton_resume.pdf" class="footer__link">Resume</a></li>
                         </ul>
                     </div>
                 </div>
@@ -382,130 +432,67 @@
         <div class="popup" id="popup-1">
             <div class="popup__content popup__content">
                 <div class="popup__left">
-                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
-                    <img src="img/nat-9.jpg" alt="Tour photo"class="popup__img">
+                    <img src="img/hike-on-mock-1.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/hike-on-mock-2.jpg" alt="Tour photo"class="popup__img">
                 </div>
                 <div class="popup__right">
                     <a href="#section-tours" class="popup__close">&times;</a>
                     <h2 class="heading-secondary u-margin-bottom-small">hike-on: hiking trail search app</h2>
                     <h3 class="heading-tertiatry u-margin-bottom-small">a hiking app for people who don't want the bs of all trails</h3>
                     <p class="popup__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur natus consequatur harum impedit deleniti earum ut molestias exercitationem magnam et corporis omnis amet aliquid nesciunt perferendis, eaque, cupiditate mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequuntur autem aspernatur incidunt, nobis laborum ratione facere harum voluptatibus earum, natus modi ex quaerat magnam ea excepturi recusandae corporis. Fugiat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit repellendus minus incidunt cupiditate alias optio ea tempore, possimus quam delectus pariatur quaerat quo expedita nisi non. Minima doloremque similique dolorem!</p>
-                    <a href="#" class="button button--green">see site</a>
-                    <a href="#" class="button button--green">see code</a>
+                    <a href="https://hike-on.herokuapp.com/" target="_blank" class="btn-text">Go to site &rarr;</a>
+                    <a href="https://github.com/athornton95/hikingApp" target="_blank" class="btn-text">Go to code &rarr;</a>
                 </div>
             </div>
         </div>
         <div class="popup" id="popup-2">
             <div class="popup__content popup__content">
                 <div class="popup__left">
-                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
-                    <img src="img/nat-9.jpg" alt="Tour photo"class="popup__img">
+                    <img src="img/inhiit-mock-1.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/inhiit-mock-2.jpg" alt="Tour photo"class="popup__img">
                 </div>
                 <div class="popup__right">
                     <a href="#section-tours" class="popup__close">&times;</a>
                     <h2 class="heading-secondary u-margin-bottom-small">Inhiit: timer-based workout buddy</h2>
                     <h3 class="heading-tertiatry u-margin-bottom-small">Important &ndash; Please read these termms before booking</h3>
                     <p class="popup__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur natus consequatur harum impedit deleniti earum ut molestias exercitationem magnam et corporis omnis amet aliquid nesciunt perferendis, eaque, cupiditate mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequuntur autem aspernatur incidunt, nobis laborum ratione facere harum voluptatibus earum, natus modi ex quaerat magnam ea excepturi recusandae corporis. Fugiat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit repellendus minus incidunt cupiditate alias optio ea tempore, possimus quam delectus pariatur quaerat quo expedita nisi non. Minima doloremque similique dolorem!</p>
-                    <a href="#" class="button button--green">see site</a>
-                    <a href="#" class="button button--green">see code</a>
+                    <a href="https://inhiit-workoutbud.herokuapp.com/" target = "_blank" class="btn-text">Go to site &rarr;</a>
+                    <a href="https://github.com/awolfden/inHiit_Java" target="_blank" class="btn-text">Go to code &rarr;</a>
                 </div>
             </div>
             </div>
         <div class="popup" id="popup-3">
             <div class="popup__content popup__content">
                 <div class="popup__left">
-                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
-                    <img src="img/nat-9.jpg" alt="Tour photo"class="popup__img">
+                    <img src="img/savr-mock-1.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/savr-mock-2.jpg" alt="Tour photo"class="popup__img">
                 </div>
                 <div class="popup__right">
                     <a href="#section-tours" class="popup__close">&times;</a>
                     <h2 class="heading-secondary u-margin-bottom-small">SAVR: A collaborative cookbook</h2>
                     <h3 class="heading-tertiatry u-margin-bottom-small">by millenials, for millenials (and others who care about going green)</h3>
                     <p class="popup__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur natus consequatur harum impedit deleniti earum ut molestias exercitationem magnam et corporis omnis amet aliquid nesciunt perferendis, eaque, cupiditate mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequuntur autem aspernatur incidunt, nobis laborum ratione facere harum voluptatibus earum, natus modi ex quaerat magnam ea excepturi recusandae corporis. Fugiat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit repellendus minus incidunt cupiditate alias optio ea tempore, possimus quam delectus pariatur quaerat quo expedita nisi non. Minima doloremque similique dolorem!</p>
-                    <a href="#" class="button button--green">see site</a>
-                    <a href="#" class="button button--green">see code</a>
+                    <a href="https://savrapp.herokuapp.com/auth/login" target="_blank" class="btn-text">Go to site &rarr;</a>
+                    <a href="https://github.com/athornton95/recipeApp" class="btn-text" target="_blank">Go to code &rarr;</a>
                 </div>
             </div>
         </div>
         <div class="popup" id="popup-4">
                 <div class="popup__content popup__content">
                     <div class="popup__left">
-                        <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
-                        <img src="img/nat-9.jpg" alt="Tour photo"class="popup__img">
+                        <img src="img/mario-mock-1.jpg" alt="Tour photo" class="popup__img">
+                        <img src="img/mario-mock-2.jpg" alt="Tour photo"class="popup__img">
                     </div>
                     <div class="popup__right">
                         <a href="#section-tours" class="popup__close">&times;</a>
                         <h2 class="heading-secondary u-margin-bottom-small">mario maze: a 2019 mario experience</h2>
-                        <h3 class="heading-tertiatry u-margin-bottom-small">by millenials, for millenials (and others who care about going green)</h3>
+                        <h3 class="heading-tertiatry u-margin-bottom-small">a twist on a classic favorite</h3>
                         <p class="popup__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur natus consequatur harum impedit deleniti earum ut molestias exercitationem magnam et corporis omnis amet aliquid nesciunt perferendis, eaque, cupiditate mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequuntur autem aspernatur incidunt, nobis laborum ratione facere harum voluptatibus earum, natus modi ex quaerat magnam ea excepturi recusandae corporis. Fugiat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit repellendus minus incidunt cupiditate alias optio ea tempore, possimus quam delectus pariatur quaerat quo expedita nisi non. Minima doloremque similique dolorem!</p>
-                        <a href="#" class="button button--green">see site</a>
-                        <a href="#" class="button button--green">see code</a>
+                        <a href="https://athornton95.github.io/mario_pacman/" class="btn-text">Go to site &rarr;</a>
+                        <a href="https://github.com/athornton95/mario_pacman" class="btn-text">Go to code &rarr;</a>
                     </div>
                 </div>
             </div>
-        <!-- <section class = "grid-text">
-            <div class = "row">
-                <div class = "col-1-of-2">
-                    Col 1 of 2
-                </div>
-                <div class = "col-1-of-2">
-                    Col 2 of 2
-                </div>
-            </div>
-            <div class = "row">
-                <div class = "col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class = "col-1-of-3">
-                    Col 2 of 3
-                </div>
-                <div class = "col-1-of-3">
-                    Col 3 of 3
-                </div>
-            </div>
-            <div class = "row">
-                <div class = "col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class = "col-2-of-3">
-                    Col 2 of 3
-                </div>
-            </div>
-            <div class = "row">
-                <div class = "col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class = "col-1-of-4">
-                    Col 2 of 4
-                </div>
-                <div class = "col-1-of-4">
-                    Col 3 of 4
-                </div>
-                <div class = "col-1-of-4">
-                    Col 4 of 4
-                </div>
-            </div>
-            <div class = "row">
-                <div class = "col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class = "col-1-of-4">
-                    Col 2 of 4
-                </div>
-                <div class = "col-2-of-4">
-                    Col 3 of 4
-                </div>
-            </div>
-            
-            <div class = "row">
-                <div class = "col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class = "col-3-of-4">
-                    Col 3 of 4
-                </div>
-            </div>
-        </section> -->
         <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbyIVYiJKDsy_ZdH_GQHCufiqU3GONF4IZjH4R0FQDXUs_mi4p42/exec'
             const form = document.forms['submit-to-google-sheet']

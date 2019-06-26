@@ -14,11 +14,17 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
+        @include respond(phone){
+            top: 3rem;
+            right: 3rem;
+            height: 6rem;
+            width: 6rem;
+        }
 
     }
     &__background {
-        height: 6rem;
-        width: 6rem;
+        height: 5.5rem;
+        width: 5.5rem;
         border-radius: 50%;
         position:fixed;
         top: 6.5rem;
@@ -26,6 +32,12 @@
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
         transition: all .8s cubic-bezier(0.100, 0.395, 0.905, 0.560);
+        @include respond(phone){
+            top: 3.5rem;
+            right: 3.5rem;
+            height: 4rem;
+            width: 4rem;
+        }
     }
     &__nav {
         height: 100vh;
@@ -91,14 +103,21 @@
     &__icon {
         position: relative;
         margin-top: 3.5rem;
+            @include respond(phone){
+                margin-top: 3rem;
+            }
 
         &,
         &::before,
         &::after {
-            width: 3rem;
+            width: 3.5rem;
             height: 2px;
             background-color: $color-gray-dark-3;
             display: inline-block;
+            @include respond(phone){
+                width: 2.5rem;
+                // height: 1.5px;
+            }
 
         }
         &::before,
@@ -108,14 +127,30 @@
             left: 0;
             transition: all .2s;
         }
-        &::before {top: -.8rem;}
-        &::after {top: .8rem;}
+        &::before {
+            top: -.8rem;
+            @include respond(phone){
+                top: -.8rem;
+            }
+        }
+        &::after {
+            top: .8rem;
+            @include respond(phone){
+                top: .8rem;
+            }
+        }
     }
     &__button:hover &__icon::before {
         top: -1rem;
+        @include respond(phone){
+            top: -.8rem;
+        }
     }
     &__button:hover &__icon::after {
         top: 1rem;
+        @include respond(phone){
+            top: .8rem;
+        }
     }
 
     &__checkbox:checked + &__button &__icon {

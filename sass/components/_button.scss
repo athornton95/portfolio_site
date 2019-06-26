@@ -16,6 +16,9 @@
         height: 100%;
         transform: scale(1.5) translate(-27%, 13%);
         fill: $color-primary-dark;
+            @include respond(phone){
+                fill: $color-secondary-light;
+            }
 
         &:hover {
             fill: $color-secondary-light;
@@ -61,10 +64,12 @@
                 margin-left: -2.5rem;
                 padding-right: 1px;
                 padding-top: 1px;
-                // background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-                // -webkit-background-clip: text;
                 color: $color-fourth-dark;
                 float: left;
+
+                @include respond(phone){
+                    font-size: 5.4rem;
+                }
 
                 &:hover {
                     color: $color-secondary-dark;

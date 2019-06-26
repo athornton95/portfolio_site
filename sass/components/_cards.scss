@@ -5,6 +5,13 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
+    @include respond(tab-port){
+        height: 40rem;
+     }
+ 
+     @include respond(tab-land){
+        height: 40rem;
+     }
 
     &__side {
         height: 40rem;
@@ -35,6 +42,7 @@
             }
             &-4 {
                 background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark); 
+
             }
         }
     }

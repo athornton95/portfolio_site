@@ -9,6 +9,9 @@
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
+    @include respond(phone){
+        overflow: scroll;
+    }
 
 
     &__content {
@@ -23,22 +26,42 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
+        @include respond(phone){
+            overflow: scroll;
+            width: 90%;
+            height: 95vh;
+            border-radius: 0;
+            float: left;
+        }
     }
 
     &__left {
         width: 33.3333333333%;
         display: table-cell;
         vertical-align: middle;
+        @include respond(phone){
+            width: 0;
+            visibility: hidden;
+            padding: 0;
+        }
     }
     &__right {
         width: 66.66666666667%;
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+        @include respond(phone){
+            width: 100%;
+            display: table-cell;
+            padding: 3rem;
+        }
     }
     &__img {
         display: block;
         width: 100%;
+        @include respond(phone){
+            visibility: hidden;
+        }
     }
     &__text {
         font-size: 1.4rem;
@@ -55,6 +78,11 @@
         -ms-hyphens:auto;
         -webkit-hyphens:auto;
         hyphens: auto;
+        @include respond(phone){
+            width: 100%;
+            display: block;
+            overflow: scroll;
+        }
     }
     &:target {
         opacity: 1;

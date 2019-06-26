@@ -14,10 +14,6 @@
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         -webkit-background-clip: text;
         color: transparent;
-
-        // width: 6.4rem;
-        // height: 6.4rem;
-        // viewBox: 0 0 64 64;
         }
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
@@ -27,16 +23,39 @@
 .feature-language {
     height: 4rem;
     text-align: center;
+
+    @include respond(phone){
+        padding-bottom: 15rem;
+    }
     ul {
         list-style: none;
         padding: 8rem 0;
+        @include respond(tab-land){
+            padding: 4rem 3rem 7rem 3rem;
+        }
+        @include respond(phone){
+            padding: 6rem 3rem 7rem 3rem;
+        }
         li {
-            display: inline;
+            display: inline-block;
             padding: 0 2rem;
             transition: transform .3s;
+            @include respond(tab-land){
+                padding: 0 5rem 6rem 5rem;
+
+            }
+            @include respond(phone){
+                padding: 0 3rem 6rem 3rem;
+
+            }
             i {
                 font-size: 6rem;
                 color: rgba($color-white, .7);
+                @include respond(phone){
+                    font-size: 4.5rem;
+
+                }
+
                 &:hover {
                     transform: translateY(-1.5rem) scale(1.03);
                     color: $color-white;

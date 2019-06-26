@@ -12,14 +12,27 @@
         &--p1 {
             left: 0;
             top: -2rem;
+            @include respond(phone){
+                left: 25%;
+                top: 0rem;
+                visibility: hidden;
+            }
         }
         &--p2 {
             right: 0;
             top: 2rem;
+            @include respond(phone){
+                visibility: hidden;
+            }
         }
         &--p3 {
             left: 20%;
             top: 10rem;
+            @include respond(phone){
+                left: 7%;
+                top: -2rem;
+                width: 85%;
+            }
         }
 
 

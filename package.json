@@ -9,7 +9,7 @@
   "author": "Alex",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "form-serializer": "^2.5.0"
